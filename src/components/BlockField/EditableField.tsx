@@ -1,23 +1,9 @@
 import React from "react";
-import EditableImage from "./EditableImage";
-import EditableTextField from "./EditableTextField";
+import EditableImage, { ImageFieldInfo } from "./EditableImage";
+import EditableTextField, { StringFieldInfo } from "./EditableTextField";
+import { VideoFieldInfo } from "./EditableVideo";
 
 export type BlockFieldInfo = StringFieldInfo | ImageFieldInfo | VideoFieldInfo;
-export type StringFieldInfo = {
-  type: "string";
-  value: string;
-};
-export type ImageFieldInfo = {
-  type: "image";
-  src: string;
-  alt: string;
-};
-
-export type VideoFieldInfo = {
-  type: "video";
-  src: string;
-  alt: string;
-};
 
 // for the editor
 export type EditableFieldProps<T extends ExtractGeneric<BlockFieldInfo>> = {

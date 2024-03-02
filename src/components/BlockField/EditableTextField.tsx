@@ -1,6 +1,11 @@
 import React, { MutableRefObject, useEffect, useRef, useState } from "react";
 import { useOnClickOutside } from "usehooks-ts";
-import { EditableFieldProps, StringFieldInfo } from "./EditableField";
+import { EditableFieldProps } from "./EditableField";
+
+export type StringFieldInfo = {
+  type: "string";
+  value: string;
+};
 
 const EditableTextField = ({
   onFieldChange,

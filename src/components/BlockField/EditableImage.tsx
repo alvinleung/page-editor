@@ -1,5 +1,11 @@
 import React from "react";
-import { EditableFieldProps, ImageFieldInfo } from "./EditableField";
+import { EditableFieldProps } from "./EditableField";
+
+export type ImageFieldInfo = {
+  type: "image";
+  src: string;
+  alt: string;
+};
 
 type EditableImageProps = EditableFieldProps<ImageFieldInfo>;
 const EditableImage = (props: EditableImageProps) => {

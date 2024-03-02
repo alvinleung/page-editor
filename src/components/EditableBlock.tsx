@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import EditableTextField from "./BlockField/EditableTextField";
-import EditableField, {
-  BlockFieldInfo,
-  StringFieldInfo,
-} from "./BlockField/EditableField";
+import EditableField, { BlockFieldInfo } from "./BlockField/EditableField";
 
 export type EditableBlockInfo = {
   fields: Array<BlockFieldInfo>;
